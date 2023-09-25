@@ -184,3 +184,18 @@ input[type="text"]{
     margin-left: 0;
     margin-right: auto;
 }
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    align-items: center;
+}
+
+.buttons button{
+    height: 36px;
+    background-color: var(--dark-color);
+    border: none;
+    border-radius: 18px;
+    color: var(--light-color);
+}
