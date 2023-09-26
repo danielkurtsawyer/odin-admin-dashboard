@@ -232,7 +232,6 @@ input[type="text"]{
     height:200px;
     box-sizing: border-box;
     box-shadow: 1px 1px 3px var(--dark-color);
-    padding: 24px;
     margin-top: 12px;
 
     border-radius: 12px;
@@ -242,6 +241,7 @@ input[type="text"]{
 }
 
 .announcement-list{
+    padding: 24px;
     grid-template-rows: 50px 50px 50px;
     gap: 6px;   
 }
@@ -268,4 +268,36 @@ input[type="text"]{
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 275px;
+    color: var(--dark-color);
+}
+
+.trending-list{
+    padding: 12px 24px;
+    grid-template-rows: repeat(4, 40px);
+    gap: 6px;   
+}
+
+.trending-item{
+    display: grid;
+    grid-template-columns: 36px 1fr 1fr;
+    column-gap: 24px;
+
+    align-items:center;
+}
+
+.trending-item .avatar{
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+}
+
+.trending-user{
+    font-size: 14px;
+    color: var(--darkest-color);
+    border-right: 1px solid var(--dark-color);
+}
+
+.trending-project{
+    font-size: 10px;
+    color: var(--dark-color)
 }
